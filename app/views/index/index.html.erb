@@ -1,0 +1,24 @@
+<h1>List of entries:</h1>
+
+<table class="entries-list">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>trap_id</th>
+      <th>ip</th>
+      <th>method</th>
+      <th>uri</th>
+      <th>cookies</th>
+      <th>created_at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @entries.each do |e| %>
+      <tr><%= render partial: 'tr', locals: {entry: e} %></tr>
+    <% end %>
+  </tbody>
+</table>
+
+<script>
+    runWebSocket()
+</script>

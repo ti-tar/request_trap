@@ -1,0 +1,6 @@
+<h1>Ваш Урл Записан, Спасибо</h1>
+
+<%= link_to "ссылка на инфо об урлах track_id '#{@entry.trap_id}'", show_group_path(@entry.trap_id) %> <br>
+<%= link_to 'ссылка на инфо об урле отдельно', show_single_path(@entry.trap_id, @entry.id) %>
+
+<%= render 'navigation' %>

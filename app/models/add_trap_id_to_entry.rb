@@ -1,0 +1,2 @@
+class AddTrapIdToEntry < ApplicationRecord
+end

@@ -1,0 +1,9 @@
+  <td><%= link_to entry.id, show_single_path(entry.trap_id, entry.id) %></td>
+  <td><%= link_to entry.trap_id, show_group_path(entry.trap_id) %></td>
+  <td><%= entry.ip %></td>
+  <td><%= entry.method %></td>
+  <td><%= entry.uri %></td>
+  <td>
+    <%= truncate(entry.cookies, length: 45, omission: '...') %>
+  </td>
+  <td><%= entry.created_at %></td>

@@ -1,0 +1,22 @@
+<h1>Info about trap_id <%= @trap_id %> </h1>
+
+<p><%= link_to 'Main', index_path %></p>
+
+<table class="entries-list">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>trap_id</th>
+    <th>ip</th>
+    <th>method</th>
+    <th>uri</th>
+    <th>cookies</th>
+    <th>created_at</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @entries.each do |e| %>
+      <tr><%= render partial: 'tr', locals: {entry: e} %></tr>
+  <% end %>
+  </tbody>
+</table>
